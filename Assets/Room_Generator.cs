@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,25 +10,41 @@ public class Room_Generator : MonoBehaviour
     public GameObject wall;
 
     // Can chose max room size
-    public float maxWidth = 10;
-    public float maxLength = 10;
+    public float maxWidth = 10;     // x axis
+    public float maxLength = 10;    // y axis
 
     // Start is called before the first frame update
     void Start()
+    {
+        //CreateWalls();
+    }
+
+    void CreateWalls()
     {
         // Chnages wall instances angle for the walls created along the z axis
         Quaternion wallAngle = Quaternion.Euler(0, 90, 0);
 
         // Randomly chooses room size
-        int wallWdith = Random.Range(5, (int)maxWidth);
-        int wallLength = Random.Range(5, (int)maxLength);
+        int wallWdith = UnityEngine.Random.Range(5, (int)maxWidth);
+        int wallLength = UnityEngine.Random.Range(5, (int)maxLength);
+
+        int[] doorWays = new int[wallWdith];
+        for (int i = 0;i < wallWdith; i++)
+        {
+            doorWays[i] = i;
+        }
+        int doorWay = UnityEngine.Random.Range(0,wallWdith);
+        List<int> notDoorWay = new List<int>(doorWays);
+        notDoorWay.RemoveAt(notDoorWay.IndexOf(doorWay));
+        doorWays = notDoorWay.ToArray();
 
         // Creates all the wall prefabs along the x axis
-        for (int i = 0; i < wallWdith; i++)
+        foreach (int n in doorWays)
         {
-            Instantiate(wall, new Vector3(1 + i, 0, 0), transform.rotation);
-            Instantiate(wall, new Vector3(1 + i, 0, wallLength + 1), transform.rotation);
+            Instantiate(wall, new Vector3(1 + n, 0, 0), transform.rotation);
         }
+        //Instantiate(wall, new Vector3(1 + i, 0, wallLength + 1), transform.rotation);
+
         // Creates all the wall prefabs along the z axis
         for (int i = 0; i < wallLength; i++)
         {
