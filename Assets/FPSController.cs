@@ -12,7 +12,7 @@ public class FPSController : MonoBehaviour
     public float jumpPower = 12f;
     public float gravity = 20f;
 
-    public float lookSpeed = 5f;
+    public float lookSpeed = 15f;
     public float lookXLimit = 45f;
 
     Vector3 moveDirection = Vector3.zero;
@@ -32,6 +32,16 @@ public class FPSController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        if (canMove)
+        {
+            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
+            rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
+            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+        }
+    }
+    private void FixedUpdate()
     {
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
@@ -57,13 +67,5 @@ public class FPSController : MonoBehaviour
         }
 
         characterController.Move(moveDirection * Time.deltaTime);
-
-        if (canMove)
-        {
-            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
-            rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
-            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
-        }
     }
 }
