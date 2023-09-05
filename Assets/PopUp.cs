@@ -6,19 +6,20 @@ using UnityEngine;
 public class PopUp : MonoBehaviour
 {
     public GameObject popup;
+    public bool popupActive;
 
     void Start()
     {
         popup.SetActive(false);
+        popupActive = false;
     }
 
-    public void Hide()
+    private void Update()
     {
-        popup.SetActive(false);
-    }
-
-    public void Show()
-    {
-        popup.SetActive(true);
+        if (Input.GetKeyUp(KeyCode.Tab))
+        {
+            popupActive = !popupActive;
+            popup.SetActive(popupActive);
+        }
     }
 }
