@@ -12,18 +12,6 @@ public class Button_Color : MonoBehaviour
     Color red = Color.red;
     Color green = Color.green;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ChangeButtonColour(Image button)
     {
         if (button.color == white)

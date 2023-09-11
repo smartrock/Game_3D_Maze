@@ -8,6 +8,6 @@ public class MansionDemo : MonoBehaviour
     void Start()
     {
         Mansion m = MansionGenerator.Generate();
-        Debug.Log(m.ToString());
+        //Debug.Log(m.ToString());
     }
 }
