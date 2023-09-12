@@ -34,6 +34,7 @@ public class FPSController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (canMove)
         {
             rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
