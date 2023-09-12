@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
@@ -32,5 +33,10 @@ public class MainMenu : MonoBehaviour
         pauseMenuActive = !pauseMenuActive;
         // Sets the UI to the new bool state making it either show or hide
         pauseMenu.SetActive(pauseMenuActive);
+    }
+
+    public void ExitToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

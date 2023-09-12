@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using UnityEngine;
+using TMPro;
 
 public class Game_Generation : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Game_Generation : MonoBehaviour
     
     public GameObject chosenWeapon;
     public GameObject chosenSuspect;
+    public TextMeshProUGUI suspectText;
     public string chosenRoom;
 
     // Start is called before the first frame update
@@ -40,10 +42,21 @@ public class Game_Generation : MonoBehaviour
         foreach (var suspect in innocentSuspects)
         {
             GameObject newSuspect = Instantiate(suspect);
+            newSuspect.AddComponent<BoxCollider>();
+            newSuspect.AddComponent<Game_Generation>();
             int suspectPositionID = Random.Range(0, suspectLocations.Count - 1);
             newSuspect.transform.position = suspectLocations[suspectPositionID];
             suspectLocations.RemoveAt(suspectPositionID);
         }
+
+        Debug.Log("It was " + chosenSuspect + " with the " + chosenWeapon + " in the " + chosenRoom);
+    }
+
+    public void CharacterLines()
+    {
+        suspectText.text = "";
+        string speak = "I saw " + " in the ";
+        suspectText.text = speak;
     }
 
     // Update is called once per frame

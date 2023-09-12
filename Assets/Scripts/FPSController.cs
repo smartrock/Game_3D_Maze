@@ -43,7 +43,7 @@ public class FPSController : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
 
-        if (GameManager.GetComponent<PopUp>().popupActive)
+        if (GameManager.GetComponent<PopUp>().popupActive || GameManager.GetComponent<MainMenu>().pauseMenuActive)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -52,6 +52,15 @@ public class FPSController : MonoBehaviour
         {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+        }
+
+        if (GameManager.GetComponent<MainMenu>().pauseMenuActive)
+        {
+            canMove = false;
+        }
+        else
+        {
+            canMove = true;
         }
     }
     private void FixedUpdate()
