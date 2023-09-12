@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9208723614577387111, guid: 052c67b2dc3d9964c82a895e45255580, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4835d5bf8012f984a8b85f33a8bd7d1e, type: 2}
     - target: {fileID: -8679921383154817045, guid: 052c67b2dc3d9964c82a895e45255580, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -63,9 +67,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2037884248300995540, guid: 052c67b2dc3d9964c82a895e45255580, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67b42b67f9d33014c83a54d5f525ac58, type: 2}
     - target: {fileID: 919132149155446097, guid: 052c67b2dc3d9964c82a895e45255580, type: 3}
       propertyPath: m_Name
-      value: Reverand Green
+      value: Reverand Green Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3964350945898810324, guid: 052c67b2dc3d9964c82a895e45255580, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 97b8e04d4aa639c4498e7c9f0e84858b, type: 2}
+    - target: {fileID: 4998044866364479450, guid: 052c67b2dc3d9964c82a895e45255580, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5e56f313a2d380b4191e6e91f6abee1f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 052c67b2dc3d9964c82a895e45255580, type: 3}

@@ -63,9 +63,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7573880413636156365, guid: 04bba4db548f45148a17eb26ff02d9b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 97b8e04d4aa639c4498e7c9f0e84858b, type: 2}
+    - target: {fileID: -6745855170381176098, guid: 04bba4db548f45148a17eb26ff02d9b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c44369dd77773504aba04f979c9f8f00, type: 2}
+    - target: {fileID: -589753342025012081, guid: 04bba4db548f45148a17eb26ff02d9b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ff90eedfe27e774980115408d0f406e, type: 2}
     - target: {fileID: 919132149155446097, guid: 04bba4db548f45148a17eb26ff02d9b6, type: 3}
       propertyPath: m_Name
-      value: Captian Midnight
+      value: Captian Midnight Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3209018298546935164, guid: 04bba4db548f45148a17eb26ff02d9b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c44369dd77773504aba04f979c9f8f00, type: 2}
+    - target: {fileID: 3904762593643589564, guid: 04bba4db548f45148a17eb26ff02d9b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ff90eedfe27e774980115408d0f406e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04bba4db548f45148a17eb26ff02d9b6, type: 3}

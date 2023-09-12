@@ -63,9 +63,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8113662451844533969, guid: 4c1a39a08c1dc8d47ac110f5afe6c72f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2e47a0930e0bcf8489e3a4a1077d9fd9, type: 2}
+    - target: {fileID: -6439692978013619079, guid: 4c1a39a08c1dc8d47ac110f5afe6c72f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d09b3a61fb598fd4f854c5a0a1c0010e, type: 2}
     - target: {fileID: 919132149155446097, guid: 4c1a39a08c1dc8d47ac110f5afe6c72f, type: 3}
       propertyPath: m_Name
-      value: Dame Dreams
+      value: Dame Dreams Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1581014216829998132, guid: 4c1a39a08c1dc8d47ac110f5afe6c72f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 767727ffa2b5ddc4c8a7686d3eb883fd, type: 2}
+    - target: {fileID: 7500829582323976533, guid: 4c1a39a08c1dc8d47ac110f5afe6c72f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 97b8e04d4aa639c4498e7c9f0e84858b, type: 2}
+    - target: {fileID: 7927558736831396235, guid: 4c1a39a08c1dc8d47ac110f5afe6c72f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 421d4799fc1fa634782343594586b16a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c1a39a08c1dc8d47ac110f5afe6c72f, type: 3}

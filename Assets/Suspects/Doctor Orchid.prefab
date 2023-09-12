@@ -63,9 +63,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3752641469761999559, guid: 5970289b745daf64697e07a1b54b4dff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2e47a0930e0bcf8489e3a4a1077d9fd9, type: 2}
+    - target: {fileID: -1488818338819318335, guid: 5970289b745daf64697e07a1b54b4dff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 38827075feabfbf4c80641591ffa0516, type: 2}
+    - target: {fileID: -959630031537423513, guid: 5970289b745daf64697e07a1b54b4dff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 035735a75f29a2142803e9a5bf21c5db, type: 2}
+    - target: {fileID: -886943216583260479, guid: 5970289b745daf64697e07a1b54b4dff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d09b3a61fb598fd4f854c5a0a1c0010e, type: 2}
     - target: {fileID: 919132149155446097, guid: 5970289b745daf64697e07a1b54b4dff, type: 3}
       propertyPath: m_Name
-      value: Doctor Orchid
+      value: Doctor Orchid Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3851148295848648182, guid: 5970289b745daf64697e07a1b54b4dff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c44369dd77773504aba04f979c9f8f00, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5970289b745daf64697e07a1b54b4dff, type: 3}

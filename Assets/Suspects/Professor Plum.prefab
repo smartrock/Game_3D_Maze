@@ -63,9 +63,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7823293702887809713, guid: bfed3b18f191e9c4ab656025fa900d19, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 97b8e04d4aa639c4498e7c9f0e84858b, type: 2}
+    - target: {fileID: -6138923895777843317, guid: bfed3b18f191e9c4ab656025fa900d19, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 035735a75f29a2142803e9a5bf21c5db, type: 2}
     - target: {fileID: 919132149155446097, guid: bfed3b18f191e9c4ab656025fa900d19, type: 3}
       propertyPath: m_Name
-      value: Gangsta Grey
+      value: Professor Plum
       objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: bfed3b18f191e9c4ab656025fa900d19, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd7049e7df0c178438ab0cc895f2a5b7, type: 2}
+    - target: {fileID: 4123177642777943866, guid: bfed3b18f191e9c4ab656025fa900d19, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 767727ffa2b5ddc4c8a7686d3eb883fd, type: 2}
+    - target: {fileID: 5128063986421979777, guid: bfed3b18f191e9c4ab656025fa900d19, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c44369dd77773504aba04f979c9f8f00, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfed3b18f191e9c4ab656025fa900d19, type: 3}

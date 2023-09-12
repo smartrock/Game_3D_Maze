@@ -63,9 +63,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4720266917285583275, guid: fbbd8a09bcb85fb4e8ed4e50afa11da5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5efb0c05ef341141b995b1324fe90c2, type: 2}
+    - target: {fileID: -4447760368756750072, guid: fbbd8a09bcb85fb4e8ed4e50afa11da5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd7049e7df0c178438ab0cc895f2a5b7, type: 2}
+    - target: {fileID: 300856674195739684, guid: fbbd8a09bcb85fb4e8ed4e50afa11da5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14a5e832cd04ac5469afad8fc2a0bf8c, type: 2}
     - target: {fileID: 919132149155446097, guid: fbbd8a09bcb85fb4e8ed4e50afa11da5, type: 3}
       propertyPath: m_Name
-      value: Miss Scarlet
+      value: Miss Scarlet Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbbd8a09bcb85fb4e8ed4e50afa11da5, type: 3}

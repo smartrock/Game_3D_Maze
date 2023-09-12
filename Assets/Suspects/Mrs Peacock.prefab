@@ -63,9 +63,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7012380181353878238, guid: c32b123a41dae504186ca2e43beaf8c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e10ce37fc1a21e7448617456fed00a87, type: 2}
+    - target: {fileID: -6175728549020679134, guid: c32b123a41dae504186ca2e43beaf8c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1191279f009a9ab49aab49344995c429, type: 2}
     - target: {fileID: 919132149155446097, guid: c32b123a41dae504186ca2e43beaf8c8, type: 3}
       propertyPath: m_Name
-      value: Mrs Peacock
+      value: Mrs Peacock Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4359971296060021806, guid: c32b123a41dae504186ca2e43beaf8c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a332293d8fb0a149944532a9e07f98f, type: 2}
+    - target: {fileID: 4361519944168269964, guid: c32b123a41dae504186ca2e43beaf8c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6a129099b10b0dc4b80ccf20c864632a, type: 2}
+    - target: {fileID: 4754598349001084009, guid: c32b123a41dae504186ca2e43beaf8c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5e56f313a2d380b4191e6e91f6abee1f, type: 2}
+    - target: {fileID: 9073347089702538730, guid: c32b123a41dae504186ca2e43beaf8c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c44369dd77773504aba04f979c9f8f00, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c32b123a41dae504186ca2e43beaf8c8, type: 3}
