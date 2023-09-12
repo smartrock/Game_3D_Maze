@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2467866182931984256
+--- !u!1001 &8811203964008921647
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a03659eab0038284096e08a92789add9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 05800af2bad33f74aabe86c2326c2fc1, type: 2}
     - target: {fileID: 919132149155446097, guid: a03659eab0038284096e08a92789add9, type: 3}
       propertyPath: m_Name
       value: leadpipe
