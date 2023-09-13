@@ -81,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d09b3a61fb598fd4f854c5a0a1c0010e, type: 2}
     - target: {fileID: 919132149155446097, guid: 5970289b745daf64697e07a1b54b4dff, type: 3}
       propertyPath: m_Name
-      value: Doctor Orchid Variant
+      value: Doctor Orchid
       objectReference: {fileID: 0}
     - target: {fileID: 3851148295848648182, guid: 5970289b745daf64697e07a1b54b4dff, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -89,3 +89,46 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c44369dd77773504aba04f979c9f8f00, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5970289b745daf64697e07a1b54b4dff, type: 3}
+--- !u!1 &6260683769302069091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5970289b745daf64697e07a1b54b4dff, type: 3}
+  m_PrefabInstance: {fileID: 6495038825767670322}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &5641714229781029037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260683769302069091}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5380213, y: 1.8111284, z: 0.4108005}
+  m_Center: {x: -0.017442107, y: 0.9021621, z: 0.017822105}
+--- !u!65 &6383015506522600790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260683769302069091}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 1.8, z: 1}
+  m_Center: {x: -0.017442107, y: 1, z: 0}
+--- !u!114 &5431170269285369371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260683769302069091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 234410b435e980e46bc2d7cc9a97354b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
