@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2433425803535710372}
   m_Layer: 0
-  m_Name: pipewench
+  m_Name: Wrench
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
