@@ -38,12 +38,14 @@ public class SuspectScript : MonoBehaviour
     // Once the player enters the trigger collider
     private void OnTriggerEnter(Collider other)
     {
+        // Make the charcter say something
         CharacterLines();
     }
 
     // Once the player leaves the trigger collider
     private void OnTriggerExit(Collider other)
     {
+        // Hide what the caharcter is saying
         RemoveCharacterLines();
     }
 }

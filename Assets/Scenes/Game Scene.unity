@@ -16078,9 +16078,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishScreen: {fileID: 1908234487}
-  GameManager: {fileID: 1596795304}
   congratsMessage: {fileID: 1943894389}
   failureMessage: {fileID: 670209254}
+  GameManager: {fileID: 1596795304}
   textFile: {fileID: 4900000, guid: 8055ecd94c651ba4d91459f177f32a9b, type: 3}
   playerResultText: {fileID: 1349127377}
   gameResultText: {fileID: 1362169682}
@@ -17623,8 +17623,6 @@ MonoBehaviour:
   playerCamera: {fileID: 963194227}
   walkSpeed: 20
   runSpeed: 30
-  jumpPower: 40
-  gravity: 45
   lookSpeed: 5
   lookXLimit: 90
   canMove: 1
