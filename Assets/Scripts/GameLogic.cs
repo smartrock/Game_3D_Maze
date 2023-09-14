@@ -9,6 +9,7 @@ public class GameLogic : MonoBehaviour
     public TextMeshProUGUI timeText;
     public float timer;
     public string userName;
+    public string timeFormatted;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,7 @@ public class GameLogic : MonoBehaviour
     {
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-        timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        timeFormatted = string.Format("{0:00}:{1:00}", minutes, seconds);
+        timeText.text = timeFormatted;
     }
 }

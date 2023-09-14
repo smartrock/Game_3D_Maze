@@ -7,11 +7,10 @@ using UnityEngine;
 public class FPSController : MonoBehaviour
 {
     public GameObject GameManager;
+    public GameObject checkZone;
     public Camera playerCamera;
     public float walkSpeed = 6f;
     public float runSpeed = 12f;
-    public float jumpPower = 12f;
-    public float gravity = 20f;
 
     public float lookSpeed = 15f;
     public float lookXLimit = 45f;
@@ -43,7 +42,7 @@ public class FPSController : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
 
-        if (GameManager.GetComponent<PopUp>().popupActive || GameManager.GetComponent<MainMenu>().pauseMenuActive)
+        if (GameManager.GetComponent<PopUp>().popupActive || GameManager.GetComponent<MainMenu>().pauseMenuActive || checkZone.GetComponent<FinsihGame>().submitActive || GameManager.GetComponent<CheckResult>().gameFinished)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -54,7 +53,7 @@ public class FPSController : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
 
-        if (GameManager.GetComponent<MainMenu>().pauseMenuActive)
+        if (GameManager.GetComponent<MainMenu>().pauseMenuActive || GameManager.GetComponent<CheckResult>().gameFinished)
         {
             canMove = false;
         }
@@ -73,20 +72,6 @@ public class FPSController : MonoBehaviour
         float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
-
-        if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
-        {
-            moveDirection.y = jumpPower;
-        }
-        else
-        {
-            moveDirection.y = movementDirectionY;
-        }
-
-        if (!characterController.isGrounded)
-        {
-            moveDirection.y -= gravity * Time.deltaTime;
-        }
 
         characterController.Move(moveDirection * Time.deltaTime);
     }
