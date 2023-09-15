@@ -21,8 +21,6 @@ public class StartMenuManager : MonoBehaviour
     // This is where the leader board can be displayed
     public TextMeshProUGUI leaderboard;
 
-    // The text file is added for the leaderboard
-    public TextAsset textFile;
     // A list to store the leaderboard text file lines each as one string
     public List<string> leaderboardValues = new List<string>();
 
@@ -43,7 +41,7 @@ public class StartMenuManager : MonoBehaviour
         // Empties the list to leaderboard string values
         leaderboardValues.Clear();
         // Adds the text file values into a list
-        leaderboardValues = File.ReadAllLines(AssetDatabase.GetAssetPath(textFile)).ToList();
+        leaderboardValues = File.ReadAllLines(Application.streamingAssetsPath + "/highscores.txt").ToList();
 
         // Changes the list of strings into one single string
         foreach (string item in leaderboardValues)
@@ -87,5 +85,11 @@ public class StartMenuManager : MonoBehaviour
             // Changes the scene to the game scene
             SceneManager.LoadScene(1);
         }
+    }
+
+    // WHen the quit button is pressed stop the game
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

@@ -108,8 +108,8 @@ public class CheckResult : MonoBehaviour
             // Sets the string to be added to the text file to the current string + the player username + the time it took
             string writeToFile = PlayerName.currentLeaderboard + Environment.NewLine + "Username: " + PlayerName.playerName + "     Time: " + GameManager.GetComponent<GameLogic>().timeFormatted;
             // Writes the text file with the string created
-            File.WriteAllText(AssetDatabase.GetAssetPath(textFile), writeToFile);
-            EditorUtility.SetDirty(textFile);
+            File.WriteAllText(Application.streamingAssetsPath + "/highscores.txt", writeToFile);
+            //EditorUtility.SetDirty(textFile);
         }
     }
 }
